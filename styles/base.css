@@ -4,6 +4,8 @@ margin:0;
 background:#f4f4f4;
 }
 
+/* HEADER */
+
 header{
 background:#2c5d82;
 color:white;
@@ -16,6 +18,8 @@ display:block;
 font-size:1.3rem;
 margin-bottom:10px;
 }
+
+/* NAV */
 
 nav{
 display:flex;
@@ -33,28 +37,108 @@ nav a:hover{
 background:#555;
 }
 
+/* MAIN GRID */
+
 main{
 max-width:900px;
 margin:auto;
 padding:1rem;
 
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:2fr 1fr;
 gap:20px;
 }
 
-.card{
-background:white;
-padding:1rem;
-border-radius:8px;
-box-shadow:0 0 5px rgba(0,0,0,0.2);
+/* TITLE */
+
+main h1{
+grid-column:1/3;
+text-align:center;
+margin-bottom:10px;
 }
 
-.card img{
-width:120px;
-display:block;
-margin:auto;
+/* CARDS */
+
+.card{
+background:white;
+border-radius:8px;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
+overflow:hidden;
 }
+
+/* CARD HEADER */
+
+.card h2{
+background:#2c5d82;
+color:white;
+text-align:center;
+padding:10px;
+margin:0;
+}
+
+/* CARD CONTENT */
+
+.card-content{
+padding:15px;
+}
+
+/* ABOUT LAYOUT */
+
+.about{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:15px;
+align-items:center;
+}
+
+/* IMAGE SIZE */
+
+.about img{
+width:110px;
+height:auto;
+border-radius:5px;
+}
+
+/* LOCATION SECTION */
+
+.location{
+padding:15px;
+}
+
+.location h3{
+text-align:center;
+margin-top:10px;
+}
+
+.location hr{
+margin:10px 0;
+}
+
+.location-grid{
+display:grid;
+grid-template-columns:120px 1fr;
+gap:20px;
+align-items:center;
+}
+
+.flag{
+text-align:center;
+font-size:0.8rem;
+color:#555;
+}
+
+.flag img{
+width:100px;
+border:1px solid #ccc;
+}
+
+/* RESOURCE LIST */
+
+.card ul{
+padding-left:20px;
+}
+
+/* FOOTER */
 
 footer{
 text-align:center;

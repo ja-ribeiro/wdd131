@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Juliana Alves Ribeiro</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
-    <meta name="author" content="Juliana Alves Ribeiro">
-    
-    <link rel="stylesheet" href="styles/base.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WDD 131 - Dynamic Web Fundamentals - Juliana Alves Ribeiro</title>
+<meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Juliana Alves Ribeiro web development resources and personal information.">
+<meta name="author" content="Juliana Alves Ribeiro">
+
+<link rel="stylesheet" href="styles/base.css">
+
+<script src="scripts/getdates.js" defer></script>
 
 </head>
+
 <body>
 
-    <header>
-        <span id="course-title">WWD 131 - Dynamic Web Fundamentals</span>
+<header>
 
-        <nav>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Juliana Alves Ribeiro</h1>
+<span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
 
-        <section class="card">
+<nav>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+<a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+<a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+<a href="#">Final Project</a>
+</nav>
 
-        <h2>About Me</h2>
+</header>
 
-        <img src="images/profile.jpg" alt="Profile photo">
+<main>
 
-        <p>
-        My name is Juliana Ribeiro. I enjoy learning web development and improving my programming skills. I like technology, traveling, and spending time with family and friends.
-        </p>
+<h1>Juliana Alves Ribeiro</h1>
 
-        </section>
+<section class="card">
 
-        <section class="card">
+<h2>About Me</h2>
 
-        <h2>Web Dev Resources</h2>
+<div class="card-content about">
 
-        <ul>
+<p>
+My name is Juliana Ribeiro. I enjoy learning web development and improving my programming skills. I like technology, traveling, and spending time with family and friends.
+</p>
 
-        <li><a href="https://dev.to/">Dev.to Community</a></li>
+<img src="images/profile.jpg" alt="Profile photo">
 
-        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+</div>
 
-        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+<div class="location">
+    <h3>São Paulo, Brazil</h3>
+    <hr>
 
-        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+    <div class="location-grid">
 
-        <li><a href="https://www.udemy.com/">Udemy</a></li>
+    <div class="flag">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/330px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Flag of São Paulo">
+    <p>Official Flag of São Paulo</p>
+    </div>
 
-        </ul>
+    <p>
+    São Paulo is the largest city in Brazil and one of the most important financial and cultural centers in Latin America. 
+    The city is known for its diversity, vibrant culture, gastronomy, and large metropolitan area with millions of residents. 
+    It is also an important hub for business, technology, and education in the country.
+    </p>
 
-        </section>
-    </main>
+    </div>
+</div>
 
-    <footer>
-        <p>©2026 <span id="currentyear"></span> 🌸 Juliana Ribeiro 🌸 Brazil</p>
+</section>
 
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </footer>
+<section class="card">
+
+<h2>Web Dev Resources</h2>
+
+<div class="card-content">
+
+<ul>
+<li><a href="https://dev.to/">Dev.to Community</a></li>
+<li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+<li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+<li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+<li><a href="https://www.udemy.com/">Udemy</a></li>
+</ul>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© <span id="currentyear"></span> 🌸 Juliana A. Ribeiro 🌸 Brazil</p>
+
+<p id="lastModified"></p>
+
+</footer>
 
 </body>
 </html>
