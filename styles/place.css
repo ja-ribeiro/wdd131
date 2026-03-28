@@ -3,7 +3,7 @@
   --yellow: #ffdf00;
   --blue: #002776;
   --white: #ffffff;
-  --card-bg: rgba(255,255,255,0.9);
+  --overlay: rgba(255, 255, 255, 0.7);
 }
 
 * {
@@ -14,19 +14,27 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #e6e6e6;
 }
 
-/* HEADER */
 header {
   background: var(--green);
-  color: var(--yellow);
   text-align: center;
-  padding: 1rem;
-  border-bottom: 8px solid var(--blue);
+  padding: 1.5rem;
+  border-bottom: 10px solid var(--blue);
+}
+
+header h1 {
+  color: var(--yellow);
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 /* HERO */
+main {
+  position: relative;
+}
+
 picture img {
   width: 100%;
   display: block;
@@ -34,62 +42,82 @@ picture img {
 
 /* CARDS */
 .card {
-  background: var(--card-bg);
-  margin: 1rem;
-  padding: 1rem;
+  background: var(--overlay);
+  padding: 1.5rem;
   border-radius: 6px;
+  margin: 1rem;
+  width: 90%;
+  max-width: 320px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
 .card h2 {
+  position: relative;
   background: var(--blue);
   color: var(--yellow);
-  padding: 0.5rem;
+  padding: 0.6rem 1rem;
   margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 1.2rem;
 }
 
-/* WEATHER ICON */
+/* ABA LATERAL */
+.card h2::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 12px;
+  height: 100%;
+  background: var(--green);
+}
+
+.card p {
+  margin: 0.4rem 0;
+}
+
 .weather-icon {
   display: block;
   margin: 0 auto 1rem;
   width: 60px;
 }
 
-/* FOOTER */
 footer {
   background: var(--green);
-  color: var(--yellow);
+  color: var(--white);
   text-align: center;
   padding: 1rem;
+  margin-top: 1rem;
 }
 
-/* -------------- */
+/* MOBILE */
+.data, .weather {
+  position: static;
+  margin: 1rem auto;
+}
+
 /* DESKTOP */
 @media (min-width: 768px) {
 
-  main {
-    position: relative;
-  }
-
+  /* CARDS SOBRE A IMAGEM */
   .data {
     position: absolute;
-    top: 100px;
-    left: 40px;
-    width: 260px;
+    top: 140px;
+    left: 80px;
+    width: 320px;
   }
 
   .weather {
     position: absolute;
-    bottom: 100px;
-    right: 40px;
-    width: 260px;
+    bottom: 140px;
+    right: 80px;
+    width: 320px;
   }
 
-  /* remove SVG */
   .weather-icon {
     display: none;
   }
 
-  /* emoji desktop */
   .weather h2::after {
     content: " ☀️";
   }
