@@ -1,0 +1,96 @@
+:root {
+  --green: #009c3b;
+  --yellow: #ffdf00;
+  --blue: #002776;
+  --white: #ffffff;
+  --card-bg: rgba(255,255,255,0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  background: var(--green);
+  color: var(--yellow);
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 8px solid var(--blue);
+}
+
+/* HERO */
+picture img {
+  width: 100%;
+  display: block;
+}
+
+/* CARDS */
+.card {
+  background: var(--card-bg);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.card h2 {
+  background: var(--blue);
+  color: var(--yellow);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* WEATHER ICON */
+.weather-icon {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 60px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--green);
+  color: var(--yellow);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* -------------- */
+/* DESKTOP */
+@media (min-width: 768px) {
+
+  main {
+    position: relative;
+  }
+
+  .data {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 260px;
+  }
+
+  .weather {
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+    width: 260px;
+  }
+
+  /* remove SVG */
+  .weather-icon {
+    display: none;
+  }
+
+  /* emoji desktop */
+  .weather h2::after {
+    content: " ☀️";
+  }
+}
