@@ -1,25 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f5f9ff;
+:root {
+  --primary: #1a3c6e;
+  --secondary: #ffffff;
+  --accent: #5b2c6f;
+  --bg: #f4f6f9;
+  --card: #ffffff;
 }
 
-/* HEADER */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: #222;
+}
+
 header {
-  background: #114894;
+  background: var(--primary);
   color: white;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#menuBtn {
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
 }
 
 /* NAV */
@@ -32,41 +37,101 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 0.5rem;
+  font-weight: 500;
 }
 
+nav a:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+  border-radius: 4px;
+}
+
+/* MENU */
 nav.open {
   display: flex;
 }
 
-/* MAIN */
+#menuBtn {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 main {
   padding: 1rem;
 }
 
+/* GRID */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-/* CARDS */
+/* CARD */
 .gallery section {
-  background: white;
+  background: var(--card);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* TITULO */
+.gallery h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+/* TEXTOS */
+.gallery p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.gallery span {
+  color: var(--accent);
+  font-weight: bold;
 }
 
 .gallery img {
   width: 100%;
-  border-radius: 6px;
-  margin-top: 10px;
+  height: 300px;        
+  object-fit: cover; 
+  border-radius: 4px;
 }
 
 /* FOOTER */
 footer {
-  background: #114894;
+  background: var(--primary);
   color: white;
   text-align: center;
   padding: 1rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

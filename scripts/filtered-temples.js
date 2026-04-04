@@ -35,6 +35,14 @@ const temples = [
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+  },
+  {
     templeName: "Washington DC",
     location: "USA",
     dedicated: "1974, November, 19",
@@ -60,22 +68,22 @@ const temples = [
     location: "Brazil",
     dedicated: "1978, October, 30",
     area: 59246,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-lds-1024.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
   },
   {
     templeName: "Campinas",
     location: "Brazil",
     dedicated: "2002, May, 17",
     area: 48500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-lds-1024.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-6012-main.jpg"
   },
   {
     templeName: "Fortaleza",
     location: "Brazil",
     dedicated: "2019, June, 2",
     area: 36000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/fortaleza-brazil-temple/fortaleza-brazil-temple-lds-1024.jpg"
-  }
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/fortaleza-brazil-temple/fortaleza-brazil-temple-5569-main.jpg"
+  },
 ];
 
 // DISPLAY
