@@ -1,84 +1,106 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
   margin: 0;
 }
 
+/* Container */
 .container {
-  max-width: 500px;
-  margin: 20px auto;
-  background: #d9d3d8;
-  padding: 20px;
-  border-radius: 10px;
+  max-width: 100%;
+  margin: 10px;
+  background: #cfc9ce;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
+/* Header */
 h1 {
-  background: #4b0033;
+  background: #0b3c66;
   color: white;
   text-align: center;
-  padding: 12px;
-  margin: -20px -20px 20px -20px;
+  padding: 15px;
+  margin: 0;
+  font-size: 18px;
 }
 
+/* Form */
+form {
+  padding: 15px;
+}
+
+/* Labels */
 label {
   display: block;
   margin-top: 15px;
-  font-weight: 500;
+  font-size: 14px;
 }
 
-input, select, textarea {
+/* Inputs */
+input,
+select,
+textarea {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
+/* Textarea */
 textarea {
   height: 80px;
 }
 
+/* Rating */
 .rating {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rating label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+
+/* Checkbox */
+.checkbox-group {
   margin-top: 10px;
 }
 
 .checkbox-group label {
-  display: block;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 14px;
 }
 
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* Button */
 .submit-btn {
   margin-top: 20px;
   padding: 10px;
-  background: #4b0033;
+  background: #0b3c66;
   color: white;
   border: none;
   font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
-.submit-btn:hover {
-  background: #6a0048;
-}
-
+/* Footer */
 footer {
-  text-align: center;
-  background: #4b0033;
+  margin: 10px;
+  background: #0b3c66;
   color: white;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-  .container {
-    margin: 10px;
-  }
-
-  .rating {
-    flex-direction: column;
-  }
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
 }
