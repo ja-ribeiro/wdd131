@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(to bottom, #f8f1df, #e6ddc6);
+  font-family: 'IM Fell English', serif;
+}
+
+header {
+  background: linear-gradient(to right, #4b3d8f, #6a5bae);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border: 2px solid #9a7dbf;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
+  color: #f3b44f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}

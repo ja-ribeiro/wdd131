@@ -1,0 +1,23 @@
+#menuBtn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+}
