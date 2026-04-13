@@ -20,4 +20,13 @@
   #menuBtn {
     display: block;
   }
+
+    .characters {
+    flex-direction: column;
+  }
+
+  .spells {
+    flex-direction: column;
+  }
+
 }
