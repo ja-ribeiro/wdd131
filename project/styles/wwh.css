@@ -6,8 +6,8 @@ body {
 header {
   background: linear-gradient(to right, #4b3d8f, #6a5bae);
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
 nav {
@@ -21,58 +21,66 @@ nav a {
   text-decoration: none;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
-  background: white;
-  border: 2px solid #9a7dbf;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-section:hover {
-  transform: scale(1.02);
-}
-
 h1, h2 {
   font-family: 'Cinzel', serif;
   color: #f3b44f;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
 }
 
+/* HOME IMAGE */
+section img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* CHARACTERS */
 .characters {
   display: flex;
   gap: 20px;
   text-align: center;
 }
 
-.characters img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 15px;
-}
-
-.card {
-  min-width: 200px;
+.house {
   text-align: center;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
+/* CENTRALIZA O CARROSSEL */
+.carousel {
+  display: flex;
+  justify-content: center; /* <-- ISSO resolve */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 10px 0;
 }
 
+/* CENTRALIZA OS CARDS */
+.card {
+  min-width: 250px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+/* PADRONIZA IMAGENS */
+.card img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* <-- CENTRALIZA IMAGEM */
+}
+
+/* SPELLS */
 .spells {
   display: flex;
   gap: 20px;
@@ -90,4 +98,16 @@ h1, h2 {
 
 .highlight img {
   width: 260px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4b3d8f;
+  color: white;
+}
+
+footer a {
+  color: #f3b44f;
 }

@@ -3,90 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Wizarding World Hub</title>
 <meta name="description" content="Explore the Wizarding World Hub and discover Hogwarts houses, characters, and magical experiences.">
 <meta name="author" content="Juliana Alves Ribeiro">
 
-<!--Goofle Fonts-->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=IM+Fell+English&display=swap" rel="stylesheet">
 
-<!--CSS-->
 <link rel="stylesheet" href="styles/wwh.css">
 <link rel="stylesheet" href="styles/wwh-mobile.css">
 
-<!--JS-->
 <script src="scripts/wwh.js" defer></script>
 
 </head>
 
 <body>
-<header>
-  <h1>Wizarding World Hub</h1>
-  <button id="menuBtn" aria-label="Open Menu">☰</button>
 
-  <nav id="navMenu">
-    <a href="index.html">Home</a>
-    <a href="houses.html">Houses</a>
-    <a href="spells.html">Contact</a>
-  </nav>
+<header>
+<h1>Wizarding World Hub</h1>
+<button id="menuBtn">☰</button>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="houses.html">Houses</a>
+<a href="spells.html">Spells</a>
+<a href="references.html">References</a>
+</nav>
 </header>
 
 <main>
 
 <section>
-  <h2>Welcome to the Wizarding World</h2>
-  <p>
-    This website invites you to explore the magical universe inspired by Harry Potter.
-    Discover the Hogwarts houses, learn about iconic characters, and interact with the content
-    to create your own magical experience.
-  </p>
+<h2>Welcome to the Wizarding World</h2>
+<p>
+Explore the magical universe inspired by Harry Potter. Discover houses, characters,
+and spells that define the wizarding world.
+</p>
 
-  <img src="images/hogwarts.jpg" alt="Hogwarts Castle surrounded by mountains" loading="lazy">
+<img src="images/hogwarts.webp" alt="Hogwarts Castle" loading="lazy">
 </section>
 
 <section>
-  <h2>Main Characters</h2>
+<h2>Main Characters</h2>
 
-  <div class="characters">
+<div class="characters">
 
-    <div>
-      <img src="images/harry.jpg" alt="Harry Potter" loading="lazy">
-      <p><strong>Harry Potter</strong><br>The main hero of the story, known for his bravery and connection to Voldemort.</p>
-    </div>
+<div>
+<img src="images/harry.webp" alt="Harry Potter" loading="lazy">
+<p><strong>Harry Potter</strong><br>The chosen one and symbol of courage.</p>
+</div>
 
-    <div>
-      <img src="images/hermione.jpg" alt="Hermione Granger" loading="lazy">
-      <p><strong>Hermione Granger</strong><br>Highly intelligent and resourceful, she is one of Harry's closest friends.</p>
-    </div>
+<div>
+<img src="images/hermione.webp" alt="Hermione Granger" loading="lazy">
+<p><strong>Hermione Granger</strong><br>Brilliant and resourceful witch.</p>
+</div>
 
-    <div>
-      <img src="images/ron.jpg" alt="Ron Weasley" loading="lazy">
-      <p><strong>Ron Weasley</strong><br>Loyal and humorous, Ron supports Harry through every challenge.</p>
-    </div>
+<div>
+<img src="images/ron.webp" alt="Ron Weasley" loading="lazy">
+<p><strong>Ron Weasley</strong><br>Loyal friend with a big heart.</p>
+</div>
 
-  </div>
+</div>
 </section>
 
 <section>
-  <h2>Choose Your Favorite Character</h2>
+<h2>Choose Your Favorite Character</h2>
 
-  <label for="characterSelect">Select a character:</label>
-  <select id="characterSelect" name="character">
-    <option value="">Choose one</option>
-    <option value="Harry Potter">Harry Potter</option>
-    <option value="Hermione Granger">Hermione Granger</option>
-    <option value="Ron Weasley">Ron Weasley</option>
-  </select>
+<label for="characterSelect">Select a character:</label>
+<select id="characterSelect">
+<option value="">Choose one</option>
+<option>Harry Potter</option>
+<option>Hermione Granger</option>
+<option>Ron Weasley</option>
+</select>
 
-  <button onclick="saveFavorite()">Save Favorite</button>
+<button onclick="saveFavorite()">Save Favorite</button>
+<p id="result"></p>
 
-  <p id="result"></p>
 </section>
 
 </main>
 
 <footer>
-  <a href="references.html">References</a>
+<p>© 2026 Juliana Alves Ribeiro</p>
+<a href="references.html">References</a>
 </footer>
+
 </body>
 </html>

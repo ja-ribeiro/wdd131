@@ -21,12 +21,11 @@
     display: block;
   }
 
-    .characters {
+  .characters {
     flex-direction: column;
   }
 
   .spells {
     flex-direction: column;
   }
-
 }
