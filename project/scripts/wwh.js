@@ -20,3 +20,23 @@ function saveFavorite() {
 
   result.textContent = `Your favorite character is ${value}.`;
 }
+
+/* =========================
+   IMAGE HOVER EFFECT (JS)
+========================= */
+
+// seleciona TODAS as imagens do site
+const images = document.querySelectorAll("img");
+
+images.forEach(img => {
+
+  img.addEventListener("mouseenter", () => {
+    img.style.transform = "translateY(-10px)";
+    img.style.transition = "0.3s";
+  });
+
+  img.addEventListener("mouseleave", () => {
+    img.style.transform = "translateY(0)";
+  });
+
+});

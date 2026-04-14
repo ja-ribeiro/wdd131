@@ -27,7 +27,6 @@
 <a href="index.html">Home</a>
 <a href="houses.html">Houses</a>
 <a href="spells.html">Spells</a>
-<a href="references.html">References</a>
 </nav>
 </header>
 
@@ -69,15 +68,18 @@ and spells that define the wizarding world.
 <section>
 <h2>Choose Your Favorite Character</h2>
 
-<label for="characterSelect">Select a character:</label>
-<select id="characterSelect">
-<option value="">Choose one</option>
-<option>Harry Potter</option>
-<option>Hermione Granger</option>
-<option>Ron Weasley</option>
-</select>
+<form>
+  <label for="characterSelect">Select a character:</label>
 
-<button onclick="saveFavorite()">Save Favorite</button>
+  <select id="characterSelect" name="character">
+    <option value="">Choose one</option>
+    <option>Harry Potter</option>
+    <option>Hermione Granger</option>
+    <option>Ron Weasley</option>
+  </select>
+
+  <button type="button" onclick="saveFavorite()">Save Favorite</button>
+</form>
 <p id="result"></p>
 
 </section>
@@ -86,7 +88,7 @@ and spells that define the wizarding world.
 
 <footer>
 <p>© 2026 Juliana Alves Ribeiro</p>
-<a href="references.html">References</a>
+<a href="./references.html">References</a>
 </footer>
 
 </body>
